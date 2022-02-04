@@ -32,11 +32,19 @@ nav>div>img{
     width: 150px;
 }
 
+nav>div>img:hover{
+    cursor: pointer;
+}
+
 nav>.boton-inicio{
     border: 2px solid var(--Light-Pink);
     padding: 0.5rem 2rem;
     border-radius: 50px;
     color: var(--Light-Pink);
+}
+
+nav>.boton-inicio:hover{
+    cursor: pointer;
 }
 
 #informacion-principal{
@@ -67,6 +75,10 @@ nav>.boton-inicio{
     border-radius: 50px;
 }
 
+#informacion-principal>.boton:hover{
+    cursor: pointer;
+}
+
 #informacion-principal>div>img{
     width: 70vw;
     padding-top: 8rem;
@@ -89,10 +101,10 @@ nav>.boton-inicio{
 }
 
 #datos-informacion>.datos>img{
-    width: 12vw;
+    width: 2.5rem;
     position: absolute;
     bottom: 8rem;
-    left: 10vw ;
+    left: 6.5vw ;
 }
 
 #datos-informacion>.datos>.numeros{
@@ -105,4 +117,35 @@ nav>.boton-inicio{
     font-size: 20px;
     padding-top: 1rem;
     color: darkgray;
+}
+
+@media only screen and (min-width:769px){
+
+    #informacion-principal>h1{
+        width: 94vw;
+        padding: 2rem 2rem;
+        font-size: 35px;
+        
+    }
+    
+    #informacion-principal>p{
+        width: 32rem;
+        font-size: 18px;
+    }
+
+    #informacion-principal>.boton{
+        padding: 1rem 6rem;
+    }
+
+    #datos-informacion{
+        display: flex;
+        justify-content: space-around;
+        padding: 10rem 4rem;
+        
+    }
+
+    #datos-informacion>.datos>img{
+        width: 3rem;
+        left: 1vw ;
+    }
 }
