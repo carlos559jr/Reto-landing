@@ -75,6 +75,9 @@ nav>.boton-inicio:hover{
     border-radius: 50px;
 }
 
+#informacion-principal>.boton:hover{
+    cursor: pointer;
+}
 
 
 #informacion-principal>div>img{
@@ -170,9 +173,7 @@ nav>.boton-inicio:hover{
 #informacion-terciaria>p {
     width: 55vh;
     padding: 0 1.5rem 3rem 1.5rem;
-#informacion-principal>.boton:hover{
-    cursor: pointer;
-}
+
 
 @media only screen and (min-width:769px){
 
