@@ -173,6 +173,7 @@ nav>.boton-inicio:hover{
 #informacion-terciaria>p {
     width: 55vh;
     padding: 0 1.5rem 3rem 1.5rem;
+}
 
 
 @media only screen and (min-width:769px){
@@ -204,4 +205,5 @@ nav>.boton-inicio:hover{
         width: 3rem;
         left: 1vw ;
     }
+
 }
