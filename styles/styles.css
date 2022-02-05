@@ -75,6 +75,48 @@ nav>.boton-inicio:hover{
     border-radius: 50px;
 }
 
+
+
+#informacion-principal>div>img{
+    width: 70vw;
+    padding-top: 8rem;
+}
+
+#datos-informacion{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 8rem;
+    padding: 4rem;
+    
+    
+}
+
+#datos-informacion>.datos{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+
+#datos-informacion>.datos>img{
+    width: 2.5rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 6.5vw ;
+}
+
+#datos-informacion>.datos>.numeros{
+    font-size: 70px;
+    font-weight: 700;
+
+}
+
+#datos-informacion>.datos>.texto{
+    font-size: 20px;
+    padding-top: 1rem;
+    color: darkgray;
+}
+
 #informacion-secundaria{
     display: flex;
     flex-direction: column;
@@ -130,46 +172,6 @@ nav>.boton-inicio:hover{
     padding: 0 1.5rem 3rem 1.5rem;
 #informacion-principal>.boton:hover{
     cursor: pointer;
-}
-
-#informacion-principal>div>img{
-    width: 70vw;
-    padding-top: 8rem;
-}
-
-#datos-informacion{
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    grid-gap: 8rem;
-    padding: 4rem;
-    
-    
-}
-
-#datos-informacion>.datos{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    text-align: center;
-}
-
-#datos-informacion>.datos>img{
-    width: 2.5rem;
-    position: absolute;
-    bottom: 8rem;
-    left: 6.5vw ;
-}
-
-#datos-informacion>.datos>.numeros{
-    font-size: 70px;
-    font-weight: 700;
-
-}
-
-#datos-informacion>.datos>.texto{
-    font-size: 20px;
-    padding-top: 1rem;
-    color: darkgray;
 }
 
 @media only screen and (min-width:769px){
