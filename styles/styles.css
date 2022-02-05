@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 :root{
     --Pink: hsl(322, 100%, 66%);
     --Light-Pink: hsl(321, 100%, 78%);
     --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
 
 }
 
@@ -12,7 +17,7 @@
 }
 
 body{
-    
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav{
@@ -27,11 +32,19 @@ nav>div>img{
     width: 150px;
 }
 
+nav>div>img:hover{
+    cursor: pointer;
+}
+
 nav>.boton-inicio{
     border: 2px solid var(--Light-Pink);
     padding: 0.5rem 2rem;
     border-radius: 50px;
     color: var(--Light-Pink);
+}
+
+nav>.boton-inicio:hover{
+    cursor: pointer;
 }
 
 #informacion-principal{
@@ -43,19 +56,96 @@ nav>.boton-inicio{
 }
 
 #informacion-principal>h1{
-    width: 50vh;
-    padding: 2rem 0;
+    width: 94vw;
+    padding: 2rem 2rem;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #informacion-principal>p{
-    width: 55vh;
-    padding: 0 0 2rem 0;
+    width: 18rem;
+    padding-bottom: 3rem ;
 }
 
-#informacion-principal>div{
+#informacion-principal>.boton{
     padding: 1rem 3rem;
     border: 2px solid var(--Pink);
     background-color: var(--Pink);
     color: white;
     border-radius: 50px;
+}
+
+#informacion-principal>.boton:hover{
+    cursor: pointer;
+}
+
+#informacion-principal>div>img{
+    width: 70vw;
+    padding-top: 8rem;
+}
+
+#datos-informacion{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 8rem;
+    padding: 4rem;
+    
+    
+}
+
+#datos-informacion>.datos{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+
+#datos-informacion>.datos>img{
+    width: 2.5rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 6.5vw ;
+}
+
+#datos-informacion>.datos>.numeros{
+    font-size: 70px;
+    font-weight: 700;
+
+}
+
+#datos-informacion>.datos>.texto{
+    font-size: 20px;
+    padding-top: 1rem;
+    color: darkgray;
+}
+
+@media only screen and (min-width:769px){
+
+    #informacion-principal>h1{
+        width: 94vw;
+        padding: 2rem 2rem;
+        font-size: 35px;
+        
+    }
+    
+    #informacion-principal>p{
+        width: 32rem;
+        font-size: 18px;
+    }
+
+    #informacion-principal>.boton{
+        padding: 1rem 6rem;
+    }
+
+    #datos-informacion{
+        display: flex;
+        justify-content: space-around;
+        padding: 10rem 4rem;
+        
+    }
+
+    #datos-informacion>.datos>img{
+        width: 3rem;
+        left: 1vw ;
+    }
 }
