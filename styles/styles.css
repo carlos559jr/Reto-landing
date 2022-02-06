@@ -182,6 +182,68 @@ nav>.boton-inicio:hover{
 }
 
 
+.bote{
+    padding: 1rem 3rem;
+    border: 2px solid var(--Pink);
+    background-color: var(--Pink);
+    color: white;
+    border-radius: 50px;
+}
+.bote:hover{
+    cursor: pointer;
+}
+
+footer{
+   background-color: #003638;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    height:100%;
+    width: 100%;
+    
+    
+   
+    }
+     .futer img{
+         margin-left:auto;
+         width:120px ;
+         height: 40px;
+         margin-top: 15px;
+         color: #fff;
+     }
+     .futer p{
+         
+         padding: auto;
+         color: #fff;
+         
+         margin-bottom: 70px;
+         margin-top: 15px;
+     }
+      .futer a{
+          
+          padding: 20px;
+          color: #fff;
+          
+          
+      }
+
+ .futer-2  {
+     
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 30px;
+ }
+ .bot{
+     
+     padding:6px;
+ }
+  .boton{
+      background-color: var(--Light-Pink);
+      padding:6px;
+      margin-left: 3px;
+  }
+
+
 @media only screen and (min-width:769px){
 
     #informacion-principal>h1{
@@ -211,5 +273,17 @@ nav>.boton-inicio:hover{
         width: 3rem;
         left: 1vw ;
     }
+
+    
+    .futer p{
+        flex-direction: column;
+    }
+    .futer a{
+        flex-direction: column;
+    }
+    .futer-2{
+    display: inline-block;
+    }
+
 
 }
