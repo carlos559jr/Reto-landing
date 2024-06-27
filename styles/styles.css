@@ -2,29 +2,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root{
-    --Pink: hsl(322, 100%, 66%);
-    --Light-Pink: hsl(321, 100%, 78%);
+    --Pink:#f1a600;;
+    --Light-Pink:#f1a600;;
     --Light-Red: hsl(0, 100%, 63%);
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
     --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --sub-color: #242635;
+    --color-body: #1f1d2c;
+    --color-text: white;
+    --tipo-fuente: 'Inter', sans-serif;
+    --padding : 0.5rem 1.5rem;
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--tipo-fuente);
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--color-text);
+    background-image: url("../assets/images/backgraund.jpg");
+    background-size: auto;
+
 }
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2rem 1.25rem;
+    padding: var(--padding);
     
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #fff;
+}
+
+input#menu{
+    visibility: hidden;
+    position: relative;
+}
+
+input#menu~ul{
+    background-color: var(--sub-color);
+    width: 100%;
+    list-style: none;
+    height: 58%;
+    position: absolute;
+    right: 100%;
+    transition: all 300ms linear;
+    opacity: 0.8;
+}
+
+input#menu:checked~ul{
+    right: 0;
+}
+
+
+nav>div>div{
+    position: absolute;
+    top: -0.1%;
+    right: 0.1vw;
+    z-index: -1;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--padding);
+}
+
+nav>div>ul>.home>a{
+    color: #f1a600;
 }
 
 nav>div>img{
@@ -35,16 +91,6 @@ nav>div>img:hover{
     cursor: pointer;
 }
 
-nav>.boton-inicio{
-    border: 2px solid var(--Light-Pink);
-    padding: 0.5rem 2rem;
-    border-radius: 50px;
-    color: var(--Light-Pink);
-}
-
-nav>.boton-inicio:hover{
-    cursor: pointer;
-}
 
 #informacion-principal{
     display: flex;
@@ -194,14 +240,13 @@ nav>.boton-inicio:hover{
 }
 
 footer{
-   background-color: #003638;
+    border-radius: 2%;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
     height:100%;
     width: 100%;
-    
-    
    
     }
      .futer img{
@@ -209,12 +254,12 @@ footer{
          width:120px ;
          height: 40px;
          margin-top: 15px;
-         color: #fff;
+         color: black;
      }
      .futer p{
          
          padding: auto;
-         color: #fff;
+         color: black;
          
          margin-bottom: 70px;
          margin-top: 15px;
@@ -222,14 +267,13 @@ footer{
       .futer a{
           
           padding: 20px;
-          color: #fff;
-          
-          
+          color: black;
+            
       }
 
  .futer-2  {
      
-    color: #fff;
+    color: black;
     margin-bottom: 20px;
     margin-top: 30px;
  }
@@ -243,8 +287,46 @@ footer{
       margin-left: 3px;
   }
 
+  .whatsapp-button {
+    position: fixed;
+    bottom: 80px;
+    right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 0.7;
+}
+
+.whatsapp-button:hover {
+    background-color: #25d366;
+    opacity: 1;
+}
 
 @media only screen and (min-width:769px){
+
+    nav>div>label{
+        display: none;
+    }
+
+    input#menu~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    input#menu~ul>li{
+        padding: 0.5rem;
+    }
 
     #informacion-principal>h1{
         width: 94vw;
@@ -284,6 +366,4 @@ footer{
     .futer-2{
     display: inline-block;
     }
-
-
 }
